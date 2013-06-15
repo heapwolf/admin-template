@@ -22,8 +22,11 @@ exports.foo = {
   //
   method: function(somevalue, callback) {
 
-    // `this` is a reference to the database instance
-    var db = this
+    // `this` has a reference to the database instance
+    // as well as the session object `{ sessionId='', groups=[], user='' }`
+
+    var db = this.db
+    var session = this.session
 
     // now maybe use an actual database method
     db.put(somevalue, callback)
