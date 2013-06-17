@@ -43,7 +43,7 @@ exports.foo = {
 }
 ```
 
-A simple http route
+### A simple http route
 
 ```js
 exports['/imageupload/:filename'] = {
