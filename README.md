@@ -49,7 +49,7 @@ exports.foo = {
 exports['/imageupload/:filename'] = {
   type: 'http',
   groups: ['user'],
-  function(req, res) {
+  method: function(req, res) {
   
     var db = this.db
     var session = this.session
