@@ -17,7 +17,7 @@ RPC methods or http routes (depending on their type).
 exports.foo = { 
 
   //
-  // 'readable', 'writable', 'sync', 'async'
+  // 'readable', 'writable', 'sync', 'async', 'http`
   //
   type: 'async', 
 
