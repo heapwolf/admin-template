@@ -9,9 +9,9 @@ and run levelweb, your module will be added.
 # USAGE
 
 ### A data method
-write any arbitrary node stuff in a module to run when the app is loaded.
-exported methods get added as methods to the database so they can be used 
-from the browser.
+A module can contain any arbitrary code that is run when 
+the app is loaded. Exported methods are added either as 
+RPC methods or http routes (depending on their type).
 
 ```js
 exports.foo = { 
@@ -44,6 +44,10 @@ exports.foo = {
 ```
 
 ### A simple http route
+In cases where you need to use http from a module, simply export
+a route and provide the type `http`. If the groups specified match
+any of the user's groups, the method will be executed. `this` has
+the context of the database and session.
 
 ```js
 exports['/imageupload/:filename'] = {
