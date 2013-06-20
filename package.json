@@ -1,5 +1,5 @@
 {
-  "name": "levelweb-template",
+  "name": "admin-template",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -9,5 +9,5 @@
   },
   "repository": "",
   "author": "",
-  "license": "BSD"
+  "license": "MIT"
 }
