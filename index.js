@@ -8,7 +8,7 @@
 exports.foo = { 
 
   //
-  // 'readable', 'writable', 'sync', 'async'
+  // 'readable', 'writable', 'sync', 'async', 'http'
   //
   type: 'async', 
 
@@ -29,6 +29,6 @@ exports.foo = {
     var session = this.session
 
     // now maybe use an actual database method
-    db.put(somevalue, callback)
+    db.get(somevalue, callback)
   }
 }
